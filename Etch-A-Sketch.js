@@ -17,7 +17,19 @@ const squares = () => {
     
 }
 
+const clearButton = () => {
+    let square = document.getElementsByClassName("square");
+    let clrButton = document.querySelector(".Clear-button");
+    clrButton.addEventListener("click", () => {
+        for(let i =0; i < square.length; i++){
+                square[i].style.backgroundColor = ""
+            };
+        }
+    )
+}
+
 (() => {
     squares();
+    clearButton();
 })
 ();
