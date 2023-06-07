@@ -11,12 +11,18 @@ h1{
     display: flex;
     flex-wrap: wrap;
     border: 2px solid black;
-    width:  534px;
-    height: 534px;
+    width:  600px;
+    height: 600px;
 }
 
 .square{
     width:  32px;
     height: 32px;
     border: 1px solid black;
+    box-sizing: border-box;
+}
+
+datalist{
+    display: flex;
+    justify-content: space-between;
 }

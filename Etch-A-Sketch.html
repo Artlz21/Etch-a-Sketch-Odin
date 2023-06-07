@@ -11,8 +11,20 @@
             <div class="grid">
                 <div class="square"></div>
             </div>
-            <div>
+
+            <div class="Control-panel">
                 <button class="Clear-button">Clear</button>
+                <div>
+                    <input type="range" min="10" max="30" id="Input-range" name="Input-range" list="markers">
+                    <datalist id="markers">
+                        <option value="10" label="10"></option>
+                        <option value="14" label="14"></option>
+                        <option value="18" label="18"></option>
+                        <option value="22" label="22"></option>
+                        <option value="26" label="26"></option>
+                        <option value="30" label="30"></option>
+                    </datalist>
+                </div>
             </div>
         </div>
 
