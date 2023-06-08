@@ -14,6 +14,7 @@ const clearButton = () => {
 const squares = (size, square) => {
     // Select the grid and square on the page 
     let grid = document.querySelector(".grid");
+    grid.innerHTML = "";
 
     square.style.width = `${(1/size) * 100}%`;
     square.style.height = `${(1/size) * 100}%`;
@@ -33,9 +34,7 @@ const sliderInput = () => {
     let sliderValue = document.getElementById("Input-range").value;
     let square = document.querySelector(".grid .square");
     let cloneSquare = square.cloneNode(true)
-    console.log(sliderValue)
-    let grid = document.querySelector(".grid");
-    grid.innerHTML = "";
+    
 
     squares(sliderValue, cloneSquare);
 }
